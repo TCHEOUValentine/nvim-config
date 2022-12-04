@@ -24,8 +24,13 @@ map('n', '<C-T>', ':tabnew<CR>')
 
 map('n', '<C-j>', '<CMD>move .+1<CR>')
 map('n', '<C-k>', '<CMD>move .-2<CR>')
-map('x', '<C-j>', ":move '>+1<CR>gv=gv")
-map('x', '<C-k>', ":move '<-2<CR>gv=gv")
+map('v', '<C-j>', ":move '>+1<CR>gv=gv")
+map('v', '<C-k>', ":move '<-2<CR>gv=gv")
+
+map('n', '<C-Up>', ":resize -2<CR>")
+map('n', '<C-Down>', ":resize +2<CR>")
+map('n', '<C-Left>', ":vertical resize -2<CR>")
+map('n', '<C-Right>', ":vertical resize +2<CR>")
 
 map('n', '<', '<<Space>')
 map('n', '>', '><Space>')

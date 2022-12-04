@@ -37,6 +37,10 @@ return packer.startup(function(use)
 
     -- Colorscheme
     use 'rebelot/kanagawa.nvim'
+    use { 
+        "catppuccin/nvim", 
+        as = "catppuccin",
+    }
 
     -- Completion
     use 'hrsh7th/cmp-nvim-lsp'
@@ -56,12 +60,27 @@ return packer.startup(function(use)
     -- Commenting
     use 'numToStr/Comment.nvim'
 
-    -- File Tree 
-    use 'nvim-tree/nvim-web-devicons'
-    use 'nvim-tree/nvim-tree.lua'
+    -- Telescope 
+    use 'nvim-lua/plenary.nvim'
+    use 'nvim-telescope/telescope.nvim'
 
-    -- Git signs 
-    use 'lewis6991/gitsigns.nvim'
+    -- ToggleTerm
+    use {
+        'akinsho/toggleterm.nvim',
+        tag = '*',
+    }
+
+    -- Treesitter
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ":TSUpdate",
+    }
+
+    -- Autopairs 
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
 
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then
