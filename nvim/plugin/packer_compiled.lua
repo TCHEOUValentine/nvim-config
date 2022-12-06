@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/tyzlo/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
-  catppuccin = {
-    loaded = true,
-    path = "/home/tyzlo/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/tyzlo/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -109,10 +104,15 @@ _G.packer_plugins = {
     path = "/home/tyzlo/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
-  ["kanagawa.nvim"] = {
+  ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/tyzlo/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
-    url = "https://github.com/rebelot/kanagawa.nvim"
+    path = "/home/tyzlo/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/tyzlo/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["nvim-autopairs"] = {
     config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
@@ -140,6 +140,11 @@ _G.packer_plugins = {
     path = "/home/tyzlo/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-treesitter-context"] = {
+    loaded = true,
+    path = "/home/tyzlo/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/tyzlo/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -150,6 +155,11 @@ _G.packer_plugins = {
     path = "/home/tyzlo/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/home/tyzlo/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/tyzlo/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -159,6 +169,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tyzlo/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/tyzlo/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-vsnip"] = {
     loaded = true,

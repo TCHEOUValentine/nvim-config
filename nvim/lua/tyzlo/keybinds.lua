@@ -2,6 +2,8 @@ local function map(mode, key, value)
     vim.keymap.set(mode, key, value, {silent = true })
 end
 
+vim.g.mapleader = " "
+
 map('n', 'W', 'w')
 map('n', 'Q', 'q')
 map('n', 'WQ', 'wq')

@@ -1,6 +1,6 @@
 local fn = vim.fn
 
--- Automatically install packer 
+-- Automatically install packer
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
     PACKER_BOOTSTRAP = fn.system {
@@ -30,17 +30,13 @@ if not status_ok then
     return
 end
 
--- Install your plugins here 
+-- Install your plugins here
 return packer.startup(function(use)
     -- Packer
     use 'wbthomason/packer.nvim'
 
-    -- Colorscheme
-    use 'rebelot/kanagawa.nvim'
-    use { 
-        "catppuccin/nvim", 
-        as = "catppuccin",
-    }
+    -- Colorschemes
+    use 'EdenEast/nightfox.nvim'
 
     -- Completion
     use 'hrsh7th/cmp-nvim-lsp'
@@ -60,9 +56,13 @@ return packer.startup(function(use)
     -- Commenting
     use 'numToStr/Comment.nvim'
 
-    -- Telescope 
+    -- Telescope
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
+    use {
+        'nvim-telescope/telescope-fzf-native.nvim',
+        run = 'make'
+    }
 
     -- ToggleTerm
     use {
@@ -75,12 +75,18 @@ return packer.startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ":TSUpdate",
     }
+    use 'nvim-treesitter/nvim-treesitter-context'
 
-    -- Autopairs 
+    -- Autopairs
     use {
         "windwp/nvim-autopairs",
-        config = function() require("nvim-autopairs").setup {} end
+        config = function()
+            require("nvim-autopairs").setup {}
+        end
     }
+
+    -- Lualine
+    use 'nvim-lualine/lualine.nvim'
 
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then
