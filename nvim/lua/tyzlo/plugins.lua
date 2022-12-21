@@ -88,6 +88,9 @@ return packer.startup(function(use)
     -- Lualine
     use 'nvim-lualine/lualine.nvim'
 
+    -- Colorizer
+    use 'norcalli/nvim-colorizer.lua'
+
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then
         require("packer").sync()
