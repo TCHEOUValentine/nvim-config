@@ -53,6 +53,9 @@ return packer.startup(function(use)
     use 'neovim/nvim-lspconfig'
     use 'williamboman/nvim-lsp-installer'
 
+    -- Leap
+    use 'ggandor/leap.nvim'
+
     -- Commenting
     use 'numToStr/Comment.nvim'
 
@@ -62,6 +65,15 @@ return packer.startup(function(use)
     use {
         'nvim-telescope/telescope-fzf-native.nvim',
         run = 'make'
+    }
+
+    -- NvimTree
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons', -- optional, for file icons
+        },
+        tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
 
     -- ToggleTerm
