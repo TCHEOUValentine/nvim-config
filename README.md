@@ -1,6 +1,6 @@
 # Tyzlo's NeoVim config
 
-## Installation 
+## Installation
 
 Install Neovim
 
@@ -34,6 +34,8 @@ https://github.com/BurntSushi/ripgrep
 
 - [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)
 - [EdenEast/nightfox.nvim](https://github.com/EdenEast/nightfox.nvim)
+- [rebelot/kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim)
+- [xiyaowong/transparent.nvim](https://github.com/xiyaowong/transparent.nvim)
 - [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
 - [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
 - [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path)
@@ -57,9 +59,9 @@ https://github.com/BurntSushi/ripgrep
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [norcalli/nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua)
 
-## New Command and Keybinds 
+## New Command and Keybinds
 
-Lsp Installer 
+Lsp Installer
 ```
 :LspInstallInfo
 ```
@@ -70,7 +72,7 @@ Lsp Installer
 
 Leap
 
-- Search forward 
+- Search forward
 ```
 s
 ```
@@ -87,7 +89,7 @@ Commenting
 gcc
 ```
 
-Telescope 
+Telescope
 
 - Search file
 ```
@@ -104,7 +106,7 @@ Telescope
 <Space>fg
 ```
 
-Nvim Tree 
+Nvim Tree
 
 - Toggle Tree
 ```
@@ -113,7 +115,7 @@ Nvim Tree
 
 Terminal
 
-- Toggle the Terminal 
+- Toggle the Terminal
 ```
 <Ctrl>\
 ```
