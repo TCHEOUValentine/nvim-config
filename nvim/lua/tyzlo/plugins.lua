@@ -37,6 +37,10 @@ return packer.startup(function(use)
 
     -- Colorschemes
     use 'EdenEast/nightfox.nvim'
+    use 'rebelot/kanagawa.nvim'
+
+    -- Transparency
+    use 'xiyaowong/nvim-transparent'
 
     -- Completion
     use 'hrsh7th/cmp-nvim-lsp'
